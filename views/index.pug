@@ -1,0 +1,14 @@
+
+extends layout
+block content
+    body
+      .container
+        form
+        .form-group
+          label(for='city') City
+          input#city.form-control(type='text' aria-describedby='text' placeholder='Enter City.')
+          small#city-help.form-text.text-muted Enter city to get weather data.
+        button.btn.btn-primary#submit(type='submit') Submit
+        
+        #result
+
